@@ -101,7 +101,7 @@ const Index = () => {
             {/* Agents Display */}
             <div className="flex items-center justify-center gap-2 sm:gap-4 p-2 sm:p-4 bg-card rounded-lg border border-border animate-scale-in overflow-hidden">
               <AgentAvatar name="Alex" type="alex" volume={volume} />
-              <div className="flex-1 min-w-0">
+              <div className="w-full max-w-md">
                 <AudioVisualizer onVolumeChange={handleVolumeChange} />
               </div>
               <AgentAvatar name="Mira" type="mira" volume={volume} />
