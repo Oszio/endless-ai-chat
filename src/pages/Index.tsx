@@ -87,8 +87,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto p-6">
+    <div className="h-screen bg-background overflow-hidden">
+      <div className="container mx-auto p-6 h-full flex flex-col">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
@@ -100,9 +100,9 @@ const Index = () => {
         </div>
 
         {/* Main Layout */}
-        <div className="grid lg:grid-cols-[1fr_400px] gap-6">
+        <div className="grid lg:grid-cols-[1fr_400px] gap-6 flex-1 overflow-hidden">
           {/* Main Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 overflow-y-auto">
             {/* Agents Display */}
             <div className="flex items-center justify-between gap-8 p-8 bg-card rounded-lg border border-border animate-scale-in">
               <AgentAvatar name="Alex" type="alex" volume={volume} />
@@ -141,7 +141,7 @@ const Index = () => {
           </div>
 
           {/* Chat Sidebar */}
-          <div className="lg:h-[calc(100vh-8rem)]">
+          <div className="h-full overflow-hidden">
             <ChatSidebar onMessagesUpdate={handleMessagesUpdate} />
           </div>
         </div>
