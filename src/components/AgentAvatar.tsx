@@ -22,8 +22,8 @@ export const AgentAvatar = ({ name, type, volume }: AgentAvatarProps) => {
       >
         {type === "alex" ? (
           <svg 
-            width="50" 
-            height="57" 
+            width="32" 
+            height="37" 
             viewBox="0 0 50 57" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +37,8 @@ export const AgentAvatar = ({ name, type, volume }: AgentAvatarProps) => {
           </svg>
         ) : (
           <svg 
-            width="45" 
-            height="56" 
+            width="29" 
+            height="36" 
             viewBox="0 0 45 56" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
