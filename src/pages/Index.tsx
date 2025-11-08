@@ -100,7 +100,7 @@ const Index = () => {
           <div className="space-y-8 overflow-y-auto">
             {/* Agents Display */}
             <div className="flex items-center justify-between gap-4 sm:gap-8 p-4 sm:p-8 bg-card rounded-lg border border-border animate-scale-in overflow-hidden">
-              <AgentAvatar name="Alex" type="alex" volume={volume} className="my-0 py-0 mx-0 px-0" />
+              <AgentAvatar name="Alex" type="alex" volume={volume} />
               <div className="flex-1 min-w-0">
                 <AudioVisualizer onVolumeChange={handleVolumeChange} />
               </div>
