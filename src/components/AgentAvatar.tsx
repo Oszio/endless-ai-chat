@@ -15,7 +15,7 @@ export const AgentAvatar = ({ name, type, volume }: AgentAvatarProps) => {
   return (
     <div className="flex flex-col items-center gap-4">
       <div
-        className="relative w-20 h-20 rounded-full bg-agent-bg border-2 border-border flex items-center justify-center overflow-hidden transition-transform duration-200"
+        className="relative w-17 h-17 rounded-full bg-agent-bg border-2 border-border flex items-center justify-center overflow-hidden transition-transform duration-200"
         style={{ transform: `scale(${scale})` }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
